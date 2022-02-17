@@ -1,0 +1,42 @@
+.todos-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2rem;
+    /* overflow: auto; */
+}
+
+.todo-card{
+    position: relative;
+    text-align: center;
+    background: black;
+    color: wheat;
+    width: 30%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delete-btn{
+    background: darkred;
+    color: wheat;
+    cursor: pointer;
+    position: absolute;
+    left: -1vw;
+    top: -1vh;
+    font-size: 2.5rem;
+    font-weight: 900;
+    padding: 0 10px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+.delete-btn:hover{
+    background: wheat;
+    color: darkred;
+    border-color: darkred;
+}
